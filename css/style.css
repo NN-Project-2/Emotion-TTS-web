@@ -1,80 +1,81 @@
-/* Reset some default styles */
-body, h1, h2, h3, audio {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #ecf0f1; 
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #283747;
+    color: #ffffff; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s; 
 }
 
 header h1 {
+    font-size: 1.8em;
+    line-height: 1.2;
     margin: 0;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 30px;
+    animation: fadeIn 0.5s ease; 
 }
 
 h2 {
-    background-color: #676b6b;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    color: #0a50a0; 
+    font-size: 1.5em;  /* Increased font size for better visibility */
+    animation: fadeIn 0.5s ease; 
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive columns */
+    gap: 20px; 
+    justify-items: center; 
+    align-items: start; 
+    padding: 20px; 
 }
 
 .grid-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 15px; 
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    background-color: #ecf0f1; 
     text-align: center;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    min-height: 150px; 
+    animation: slideIn 0.5s ease; 
 }
 
-.grid-item h3 {
-    margin-bottom: 10px;
-    color: #3f3f3f;
+.grid-item:hover {
+    background-color: #eaeaea; 
+    transform: translateY(-5px); 
 }
 
 audio {
-    width: 100%;
-    border-radius: 5px;
-    outline: none;
+    width: 100%; 
+    margin-top: 10px; 
 }
 
-audio::-webkit-media-controls-panel {
-    background: #b3b6b6;
-    border-radius: 5px;
+@keyframes slideIn {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
 }
 
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-fullscreen-button {
-    color: #fff;
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
 }
