@@ -22,9 +22,18 @@ header h1 {
 }
 
 h2 {
-    color: #0a50a0; 
+    color: #4B0082; 
     font-size: 1.5em;  /* Increased font size for better visibility */
     animation: fadeIn 0.5s ease; 
+}
+
+
+h3 {
+    color: #1E3A8A; 
+    font-size: 1.5em;  /* Increased font size for better visibility */
+    animation: fadeIn 0.5s ease; 
+    text-align: left;
+    padding: 20px;
 }
 
 .grid-container {
