@@ -11,8 +11,184 @@
         <h1>EMOD: AN EFFICIENT APPROACH FOR LOW RESOURCE CONTROLLABLE EMOTIONAL SPEECH SYNTHESIS</h1>
     </header>
     <main>
+<h2>Emotion Intensity Control</h2>
 
-        
+<div style="
+  background: #f9f9ff; 
+  border-left: 5px solid #4a90e2; 
+  padding: 15px 20px; 
+  margin-bottom: 20px; 
+  border-radius: 6px; 
+  font-size: 15px; 
+  line-height: 1.6; 
+  color: #333;
+">
+
+  Emotion intensity defines how strongly an emotion is expressed in speech. 
+  Lower values (0.5) sound softer and more subtle, while higher values (1.0) sound stronger and more expressive. 
+  In this system, emotional style is controlled through learned <em>embeddings</em>, which capture how different emotions vary in tone and delivery. 
+  Even for low-resource Indian languages, where large annotated emotional datasets are limited, the model adapts using <em>zero-shot learning</em>, 
+  meaning it generalizes emotion control without requiring explicit training data for each language.
+</div>
+
+<section>
+  <div class="grid-container">
+
+    <!-- Row 1 -->
+    <div class="grid-item text-block" rowspan="2">
+      <h4>Text - English</h4>
+      <p>Every morning, I go for a walk, which refreshes me and gives a good start to the day.</p>
+    </div>
+
+    <div class="grid-item">
+      <h4>Neutral (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Neutral_2.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Neutral (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Neutral_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Fear (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Fear_1.9.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Fear (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Fear_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid-item">
+      <h4>Angry (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/angry_1.9.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Angry (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/angry_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/sad_1.9.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/sad_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="grid-item">
+      <h4>Happy (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Happay_2.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Happy (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/en/Happay_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="grid-container">
+
+    <!-- Row 1 -->
+    <div class="grid-item text-block" rowspan="2">
+      <h4>Text - Malayalam</h4>
+      <p>ഷെഡ്യൂൾ ചെയ്ത എല്ലാ അലാറങ്ങളും എന്നെ കാണിക്കുക.</p>
+    </div>
+
+    
+    <!-- Row 2 -->
+    <div class="grid-item">
+      <h4>Angry (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ml/angry/angry-2.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Angry (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ml/angry/angry-1.1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ml/sad/Sad_2.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ml/sad/Sad_1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="grid-container">
+
+    <!-- Row 1 -->
+    <div class="grid-item text-block" rowspan="2">
+      <h4>Text - Tamil</h4>
+      <p>திருவிழா நேரங்களில் இந்த வெடிகள் எதற்கு பொகையா போகுது காசெல்லாம்</p>
+    </div>
+
+    
+    <!-- Row 2 -->
+    <div class="grid-item">
+      <h4>Angry (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ta/angry/angry-1.5.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Angry (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ta/angry/angry-1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (0.5)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ta/sad/sad-1.5.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="grid-item">
+      <h4>Sad (1.0)</h4>
+      <audio controls>
+        <source src="assets/audio/update/ta/sad/sad-1.0.wav" type="audio/wav">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+
+ 
         <h2>TTS Zero-shot Emotion Conversions</h2>
         <section>
   <h3>Same Language Emotion Conversion</h3>
@@ -803,12 +979,6 @@
     </div>
 </section>
 
-
-<!-- ----------------------------------------->
-
-
-
-
-    </main>
+</main>
 </body>
 </html>
