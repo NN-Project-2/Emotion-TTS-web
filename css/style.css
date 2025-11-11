@@ -1,13 +1,19 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 250px repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; /* 5 columns: Text + 4 audio cells */
+  gap: 1rem;
   align-items: start;
 }
 
+.placeholder {
+  /* Empty invisible div to keep alignment */
+  visibility: hidden;
+}
+
+
 .text-block {
-  grid-row: span 3;
+  grid-row: span 4; /* makes the text cell span all emotion rows */
 }
 
 .grid-item h4 {
@@ -74,6 +80,11 @@ h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     min-height: 150px; 
     animation: slideIn 0.5s ease; 
+   background: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
 
 .grid-item:hover {
